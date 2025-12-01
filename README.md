@@ -1,6 +1,6 @@
 # FastCar Location - Système de Gestion de Location de Voitures
 
-Application web complète pour la gestion d'une agence de location de voitures, développée en PHP avec une architecture MVC.
+Application web pour la gestion d'une agence de location de voitures, développée en PHP avec une architecture MVC.
 
 ## 🚀 Fonctionnalités
 
@@ -51,18 +51,6 @@ mysql -u root -p fastcar_location < database.sql
 
 Ou via phpMyAdmin, importer le fichier `database.sql`
 
-### 3. Configuration de la connexion
-
-Modifier le fichier `config/database.php` avec vos paramètres de connexion :
-
-```php
-$this->pdo = new PDO(
-    "mysql:host=localhost;dbname=fastcar_location;charset=utf8mb4",
-    "votre_utilisateur",
-    "votre_mot_de_passe",
-    [...]
-);
-```
 
 ### 4. Créer un utilisateur administrateur
 
@@ -72,8 +60,6 @@ Après avoir importé la base de données, vous devez créer un utilisateur via 
 INSERT INTO users (nom, prenom, email, password) 
 VALUES ('Admin', 'System', 'admin@fastcar.ma', '$2y$10$...');
 ```
-
-Le mot de passe doit être hashé avec `password_hash()` en PHP. Pour créer un utilisateur, utilisez la page d'inscription.
 
 ### 5. Lancer l'application
 
@@ -97,6 +83,7 @@ Ouvrir un navigateur et aller à :
 location/
 ├── config/
 │   └── database.php          # Configuration de la base de données
+│   ├── database.sql          # Schéma de la base de données
 ├── controllers/              # Contrôleurs MVC
 │   ├── AnalyticsController.php
 │   ├── AgentController.php
@@ -136,21 +123,10 @@ location/
 │   ├── search/
 │   └── voitures/
 ├── assets/                  # Ressources statiques (CSS, JS, images)
-├── database.sql             # Schéma de la base de données
 ├── dashboard.php            # Point d'entrée principal (après connexion)
 ├── index.php               # Point d'entrée (authentification)
 └── README.md               # Ce fichier
 ```
-
-## 🎨 Personnalisation
-
-### Thèmes et Couleurs
-
-L'application supporte :
-- Thème clair/sombre/auto
-- Couleurs primaires : bleu, vert, violet, orange, rouge
-
-Configurable dans **Paramètres > Apparence**
 
 ### Informations de l'Entreprise
 
@@ -166,7 +142,7 @@ Modifier les informations de l'entreprise dans **Paramètres > Entreprise** :
 
 1. Aller sur la page d'accueil
 2. Cliquer sur "Se connecter"
-3. Entrer vos identifiants
+3. Entrer les identifiants par défaut 
 
 ### 2. Gestion des Voitures
 
@@ -202,14 +178,6 @@ Modifier les informations de l'entreprise dans **Paramètres > Entreprise** :
 2. Consulter les statistiques et graphiques
 3. Exporter les données si nécessaire
 
-## 🔒 Sécurité
-
-- ✅ Mots de passe hashés avec `password_hash()`
-- ✅ Protection contre les injections SQL (PDO prepared statements)
-- ✅ Protection XSS (htmlspecialchars)
-- ✅ Sessions sécurisées
-- ✅ Validation des données
-
 ## 🛠️ Technologies Utilisées
 
 - **Backend** : PHP 7.4+
@@ -220,37 +188,8 @@ Modifier les informations de l'entreprise dans **Paramètres > Entreprise** :
 - **Graphiques** : Chart.js 4.4
 - **Architecture** : MVC (Model-View-Controller)
 
-## 📝 Notes Importantes
-
-1. **Base de données** : Assurez-vous que la base de données est créée et configurée avant d'utiliser l'application
-2. **Permissions** : Assurez-vous que PHP a les permissions d'écriture si nécessaire
-3. **Production** : Pour la production, configurez correctement les paramètres de sécurité (HTTPS, etc.)
-
-## 🐛 Résolution de Problèmes
-
-### Erreur de connexion à la base de données
-- Vérifier les paramètres dans `config/database.php`
-- Vérifier que MySQL est démarré
-- Vérifier que la base de données existe
-
-### Erreur 404
-- Vérifier que le serveur web pointe vers le bon répertoire
-- Vérifier la configuration des routes
-
-### Problèmes d'affichage
-- Vérifier que les CDN (Bootstrap, Chart.js) sont accessibles
-- Vider le cache du navigateur
-
-## 📞 Support
-
-Pour toute question ou problème, consultez la documentation ou contactez l'équipe de développement.
-
 ## 📄 Licence
 
-Ce projet est développé pour FastCar Location, Marrakech.
+projet développé pour FastCar Location, faculté des sciences semlalia, département d'info, système d'informations.
 
 ---
-
-**Version** : 1.0.0  
-**Dernière mise à jour** : 2024
-
