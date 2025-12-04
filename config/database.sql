@@ -104,28 +104,30 @@ INSERT INTO users (nom, prenom, email, password, role, theme, primary_color) VAL
 -- Insertion des AGENTS
 INSERT INTO agents (num_agent, nom, prenom) VALUES 
 ('AG-2024-001', 'BENSAID', 'Amina'),
-('AG-2024-002', 'ALAOUI', 'Mehdi'),
-('AG-2024-004', 'EL FASSI', 'Youssef');
+('AG-2025-002', 'ALAOUI', 'Mehdi'),
+('AG-2025-004', 'EL FASSI', 'Youssef');
 
 -- Insertion des CLIENTS
 INSERT INTO clients (cin, nom, prenom, adresse, telephone, email) VALUES 
 ('AB123456', 'EL FADLI', 'Karim', '24, Avenue Hassan II, Casablanca', '0612-345678', 'karim.elfadli@gmail.com'),
-('CD789012', 'ALAMI', 'Samira', '15, Rue Mohammed V, Rabat', '0623-456789', 'samira.alami@hotmail.com'),
-('EF345678', 'BENNOUNA', 'Ahmed', '45, Boulevard Zerktouni, Marrakech', '0634-567890', 'ahmed.bennouna@yahoo.com'),
+('CD789012', 'ALAMI', 'Samira', '15, Rue Mohammed V, Rabat', '0623-456789', 'samira.alami@gmail.com'),
+('EF345678', 'BENNOUNA', 'Ahmed', '45, Boulevard Zerktouni, Marrakech', '0634-567890', 'ahmed.bennouna@gmail.com'),
 ('GH901234', 'CHAFIK', 'Leila', '78, Avenue des FAR, Tanger', '0645-678901', 'leila.chafik@gmail.com'),
 ('IJ567890', 'MOUTAOUAKIL', 'Hassan', '33, Rue Palestine, Agadir', '0656-789012', 'hassan.moutaouakil@outlook.com'),
 ('KL123456', 'RAHALI', 'Nadia', '12, Rue Ghazali, Fès', '0667-890123', 'nadia.rahali@gmail.com'),
-('MN789012', 'ZEROUAL', 'Omar', '56, Avenue Mohammed VI, Meknès', '0678-901234', 'omar.zeroual@hotmail.com'),
-('OP345678', 'TAZI', 'Sofia', '89, Boulevard Hassan I, Oujda', '0689-012345', 'sofia.tazi@yahoo.com'),
+('MN789012', 'ZEROUAL', 'Omar', '56, Avenue Mohammed VI, Meknès', '0678-901234', 'omar.zeroual@gmail.com'),
+('OP345678', 'TAZI', 'Sofia', '89, Boulevard Hassan I, Oujda', '0689-012345', 'sofia.tazi@gmail.com'),
 ('QR901234', 'BELKHAYAT', 'Mehdi', '22, Rue Ibn Sina, Tétouan', '0690-123456', 'mehdi.belkhayat@gmail.com'),
 ('ST567890', 'LAMRANI', 'Fatima', '67, Avenue Al Massira, Safi', '0601-234567', 'fatima.lamrani@outlook.com');
 
 -- Insertion des VOITURES
 INSERT INTO voitures (matricule, marque, modele, prix_journalier, etat_courant, kilometrage_actuel) VALUES 
-('12345-A-56', 'Dacia', 'Sandero Stepway', 280.00, 'Disponible', 32850),
-('23456-B-78', 'Renault', 'Clio V', 300.00, 'Louée', 24500),
-('34567-C-90', 'Peugeot', '208', 300.00, 'Disponible', 18700),
-('45678-D-12', 'Hyundai', 'i20', 300.00, 'En maintenance', 41200),
+('12345-A-26', 'Dacia', 'Sandero Stepway', 280.00, 'Disponible', 32850),
+('23456-B-26', 'Renault', 'Clio V', 300.00, 'Louée', 24500),
+('34567-A-26', 'Peugeot', '208', 300.00, 'Disponible', 18700),
+('45678-B-26', 'Hyundai', 'i20', 300.00, 'En maintenance', 41200),
 ('56789-E-34', 'Toyota', 'Yaris', 350.00, 'Disponible', 15600),
 ('67890-F-56', 'Volkswagen', 'Golf 8', 400.00, 'Disponible', 28900),
-('78901-G-78', 'Mercedes', 'Classe A', 600.00, 'Disponible', 12500);
+('78901-G-78', 'Mercedes', 'Classe A', 600.00, 'Disponible', 12500),
+('34007-A-26', 'Volkswagen', 'Tiguan', 800.00, 'Disponible', 16500),
+('32067-A-26', 'Volkswagen', 'Touareg', 1000.00, 'Disponible', 10000);
