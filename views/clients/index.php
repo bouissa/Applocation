@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h3><i class="bx bx-user me-2"></i>Gestion des Clients</h3>
-    <a href="index.php?action=clients_create" class="btn btn-primary">
+    <a href="dashboard.php?action=clients_create" class="btn btn-primary">
         <i class="bx bx-plus me-1"></i>Nouveau Client
     </a>
 </div>
