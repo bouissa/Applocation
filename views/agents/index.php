@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h3><i class="bx bx-id-card me-2"></i>Gestion des Agents</h3>
-    <a href="index.php?action=agents_create" class="btn btn-primary">
+    <a href="dashboard.php?action=agents_create" class="btn btn-primary">
         <i class="bx bx-plus me-1"></i>Nouvel Agent
     </a>
 </div>
